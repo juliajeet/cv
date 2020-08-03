@@ -1,0 +1,228 @@
+@font-face {
+  font-family: RobotoBold;
+  src: url("fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url("fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: RobotoRegular;
+  src: url("fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Alegreya;
+  src: url("fonts/Alegreya-Regular.ttf");
+}
+/* Body */
+body {
+  background-color: #f0f4f8;
+  padding: 20px 0;
+}
+/* Layout */
+header {
+  padding: 20px;
+}
+header img {
+  width: 200px;
+  height: auto;
+  border: 5px solid #e64c3c;
+}
+header h1 {
+  font-family: RobotoBold;
+  font-size: 40px;
+  color: #e64c3c;
+}
+header p {
+  font-family: RobotoLight;
+  font-size: 20px;
+}
+.main-info h4 {
+  color: white;
+  width: 100%;
+  padding: 5px 10px;
+  margin: 5vh 0;
+  border-left: 10px solid #e64c3c;
+  background-color: #2c3e50;
+  font-family: Alegreya;
+  text-transform: capitalize;
+}
+.main-info .info .about-me {
+  color: #2c3e50;
+  font-family: RobotoLight;
+  font-size: 20px;
+  padding-bottom: 5vh;
+  margin: 0 auto;
+}
+.main-info .info img.edu {
+  height: auto;
+  width: 100%;
+}
+.main-info div.edu {
+  padding: 0 7%;
+}
+.main-info div.edu .edu-name {
+  font-family: RobotoRegular;
+  font-size: 20px;
+  color: #2c3e50;
+}
+.main-info .personal-info {
+  padding-top: 5vh;
+}
+.main-info .personal-info .part-info {
+  font-family: RobotoRegular;
+  font-size: 18px;
+  color: #4e4e4e;
+}
+.main-info .personal-info .part-info:first-child {
+  padding-right: 5vw;
+}
+.main-info .personal-info .part-info:last-child {
+  padding-left: 5vw;
+}
+.main-info .personal-info .part-info .single-institution {
+  margin: 20px 0;
+}
+.main-info .personal-info .part-info .single-institution .institution {
+  font-weight: bold;
+}
+.main-info .personal-info .part-info .single-institution .terms:before {
+  content: "[ ";
+}
+.main-info .personal-info .part-info .single-institution .terms:after {
+  content: " ]";
+}
+.main-info .personal-info .part-info .single-institution .ism {
+  font-family: RobotoLight;
+  font-size: 15px;
+}
+.main-info .personal-info .part-info .single-info {
+  padding: 0;
+  margin: 20px 0;
+  font-size: 18px;
+  color: #4e4e4e;
+}
+.main-info .personal-info .part-info .single-info .info-type {
+  margin-left: 15px;
+  width: 5vw;
+  padding: 0;
+  font-weight: bold;
+}
+.main-info .personal-info .part-info .single-info .info-text {
+  margin: 0;
+  padding: 0;
+}
+.main-info .skills .skills-group .single-skill {
+  padding: 0;
+  font-family: RobotoRegular;
+  font-size: 17px;
+}
+.main-info .skills .skills-group .single-skill .skill-type {
+  font-weight: bold;
+  padding-right: 0;
+}
+.main-info .skills .skills-group .single-skill .skill-level {
+  color: #e64c3c;
+  padding-left: 0;
+}
+.main-info .hobbies .single-hobby .fa {
+  font-size: 50px;
+  color: #e64c3c;
+}
+.main-info .hobbies .single-hobby .hobby-name {
+  font-family: RobotoRegular;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+.portfolio .portfolio-links .portfolio-link {
+  font-size: 20px;
+  font-family: RobotoRegular;
+  background-color: #f0f4f8;
+  border: 2px solid #2c3e50;
+  color: #000;
+  margin: 0 10px 10px 0;
+}
+.portfolio .portfolio-links .portfolio-link:hover,
+.portfolio .portfolio-links .portfolio-link:active {
+  border-color: #e64c3c;
+}
+.portfolio .portfolio-links .portfolio-link:active {
+  background-color: #e64c3c;
+}
+.portfolio hr {
+  background: linear-gradient(to right, #e64c3c, #2c3e50);
+  height: 3px;
+}
+/* Modules */
+.module-arrow .h4-with-decoration {
+  background: #2c3e50;
+}
+.module-arrow .h4-with-decoration .span-first {
+  float: right;
+  position: relative;
+  color: #2c3e50;
+  margin: -5px;
+  padding: 0px 1rem;
+  border-left: 15px solid #f0f4f8;
+  line-height: 3rem;
+}
+.module-arrow .h4-with-decoration .span-first:before,
+.module-arrow .h4-with-decoration .span-first:after {
+  content: "";
+  position: absolute;
+  /* Сдвигаем вниз на половину. Обратное вытягивание на половину высоты треугольника
+		           гарантирует центрирование, если изменится размер шрифта или высота */
+  top: 50%;
+  width: 0;
+  height: 0;
+}
+.module-arrow .h4-with-decoration .span-first:before {
+  left: 0px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid #f0f4f8;
+  margin-top: -15px;
+}
+.module-arrow .h4-with-decoration .span-first:after {
+  left: -15px;
+  border-top: 15px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 20px solid #2c3e50;
+  margin-top: -15px;
+}
+.module-arrow .h4-with-decoration .span-second {
+  float: right;
+  position: relative;
+  color: #2c3e50;
+  margin: -5px;
+  padding: 0px;
+  line-height: 3rem;
+}
+.module-arrow .h4-with-decoration .span-second:before,
+.module-arrow .h4-with-decoration .span-second:after {
+  content: "";
+  position: absolute;
+  /* Сдвигаем вниз на половину. Обратное вытягивание на половину высоты треугольника
+		           гарантирует центрирование, если изменится размер шрифта или высота */
+  top: 50%;
+  width: 0;
+  height: 0;
+}
+.module-arrow .h4-with-decoration .span-second:before {
+  left: 4rem;
+  border-top: 16px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-left: 21px solid #2c3e50;
+  margin-top: -15px;
+}
+@media (min-width: 768px) {
+  .module-arrow {
+    width: calc(100%-4rem);
+  }
+}
+@media (max-width: 768px) {
+  .main-info .personal-info .part-info .single-info .info-text {
+    padding-left: 15%;
+  }
+}
